@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo - tabela</title>
+
+    <style>
+        /* tbody tr:nth-child(even) [todos os tr pares] tbody tr:nth-child(odd) [todos os tr impares] tbody tr:hover [dar uma regra para quando o usuário passar em um lugar] */
+
+        table {
+            width: 100%;
+            background-color: cornsilk;
+            color: brown;
+            empty-cells: hide;
+        }
+
+        thead, tfoot {
+            color:crimson;
+            font-weight: bold;
+        }
+
+        table, td, tr, th {
+            border: 2px solid black;
+            border-collapse: separate;
+            border-spacing: 5px 10px;
+        }
+
+        caption {
+            caption-side: bottom;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <a href="../home.html"> &lt;-VOLTAR </a> <br>
+    <h1 style="text-align: center;"> EXEMPLO DE TABELA </h1>
+
+    <table border="1">
+        <caption> Tab 1. essa tabela tem dados pessoais do corpo administrativo empresa Paralaxe. </caption>
+
+        <thead>
+        <tr>
+            <th colspan="6"> DADOS PESSOAIS </th>
+        </tr>
+
+        <tr>
+            <td> Primeiro nome </td>
+            <td> Último nome </td>
+            <td> Idade </td>
+            <td> Sexo </td>
+            <td> Raça/cor </td>
+            <td> Profissão </td>
+        </tr>
+        </thead>
+        
+        <tbody>
+        <tr>
+            <td> Kaun </td>
+            <td> Borges </td>
+            <td> 20 </td>
+            <td> Masculino </td>
+            <td> Amarelo </td>
+            <td> Cantor </td>
+        </tr>
+        
+        <tr>
+            <td> Viviane </td>
+            <td> Borges </td>
+            <td> 20 </td>
+            <td> Feminino </td>
+            <td> Branca </td>
+            <td> Artista </td>
+        </tr>
+        
+        <tr>
+            <td> Henriqueta </td>
+            <td> Borges </td>
+            <td> 20 </td>
+            <td> Feminino </td>
+            <td> Negra </td>
+            <td> Professora </td>
+        </tr>
+        
+        <tr>
+            <td> Leandra </td>
+            <td> Silva </td>
+            <td> 20 </td>
+            <td> Feminina </td>
+            <td> Negra </td>
+            <td> Médica </td>
+        </tr>
+        
+        <tr>
+            <td> Nicole </td>
+            <td> Borges </td>
+            <td> 20 </td>
+            <td> Feminino </td>
+            <td> Negra </td>
+            <td> Professora </td>
+        </tr>
+        
+        <tr>
+            <td> Alex </td>
+            <td> Ferrreira </td>
+            <td> 20 </td>
+            <td> Masculino </td>
+            <td> Amarelo </td>
+            <td> Professor </td>
+        </tr>        
+        
+        <tr>
+            <td> Luiz </td>
+            <td> Santana </td>
+            <td> 34 </td>
+            <td> Masculino </td>
+            <td> Branco </td>
+            <td> Catador de lixo </td>
+        </tr>        
+        
+        <tr>
+            <td> João </td>
+            <td> Veloso </td>
+            <td> 22 </td>
+            <td> Masculino </td>
+            <td> Negro </td>
+            <td> Médico </td>
+        </tr>        
+        
+        <tr>
+            <td> Henrique </td>
+            <td> Borges </td>
+            <td> 20 </td>
+            <td> Masculino </td>
+            <td> Negro </td>
+            <td> Professor </td>
+        </tr>
+        
+        <tr>
+            <td> Luiz </td>
+            <td> Virgilio </td>
+            <td> 20 </td>
+            <td> Masculino </td>
+            <td>  </td>
+            <td> Fisico </td>
+        </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="6"> PARA MAIS INFORMAÇÕES ENTRE EM CONTATO </th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

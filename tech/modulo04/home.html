@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" type="image/jpg" href="../extras/startse.png" />
+    <title>Meus estudos | TechAcademy | Linguagens de programação </title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo_header">TechAcademy</h1>
+
+            <a href="../index.html" class="link"> HOME </a>
+
+            <a href="../modulo01/home.html" class="link"> SOBRE COMPUTAÇÃO </a>
+
+            <a href="../modulo02/home.html" class="link"> SOBRE PROGRAMAÇÃO </a>
+
+            <a href="../modulo03/home.html" class="link"> HTML5 </a>
+
+            <a href="./home.html" class="link"> CSS3 </a>
+
+            <a href="../modulo05/home.html" class="link"> ELEMENTOS DE PÁGINA </a>
+    </header>
+
+    <section id="tech-academy">
+        <h1>Aprendendendo CSS3.</h1> <br>
+
+        <a href="./exemplo-pratico/example.html"> EXEMPLO PRÁTICO PRODUZIDO NO MÓDULO. </a>
+
+        <h2>Introdução ao CSS.</h2> <br>
+        <p>
+            -CSS (Cascading Style Sheets ou Folha de Estilo em Cascatas), descreve como os elementos HTML devem ser apresentados e define a apresentação (layout e estilo) de uma página. <br>
+            -Vantagem de usar CSS: separação entre conteúdo e formato, fácil e rápido de alterar, reutilização e responsividade. <br>
+            -Navegador WEB (ler o site), VSCode ou CodePen (escrever CSS). <br>
+            Funciona a partir de <strong> Seletor: </strong> define quais os elementos serão afetados; <strong> Regra: </strong> define como os elementos serão afetados. Essa regras tem 1)propriedade: define a característica que será modificada; 2)valor: define como a característica será modificada. <br>
+            seletor { propriedade: valor }
+        </p> <br>
+
+        <h2>Aplicações do CSS.</h2> <br>
+        <p>
+            -Sintaxe é um conjunto de regras que permite o uso da linguagem CSS: <strong>seletor { regras (propriedade: valor;) }</strong> <br>
+            -3 formas de usar o css: 1)Por meio do atributo no próprio elemento; 2)Por meio da tag style no corpo do código; 3)Por meio de um arquivo externo e linkado a página; <br>
+            -Seletor de elemento: pega uma tag html e aplica uma regra (a, p, h1...) <br>
+            -Regras básicas: 1)Cor do texto (color: red;) 2)Sublinhado (text-decoration: underline;) 3)Cor do fundo (background-color: green;) 4)Borda (border: 1px solid black;)
+        </p> <br>
+
+        <h2>Classes e IDs</h2> <br>
+        <p>
+            Seletores são usados para identificar os elementos HTML e aplicar uma  regra a ele. <br>
+            Seletor elemento é uma regra geral para todos os elementos de uma mesma tag. <br>
+            Seletor classe é uma regra um pouco mais específica para vários elementos parecidos. ( class - . ) <br>
+            Seletor id (identificador) é a regra mais específica para um elemento específico do HTML ( id - # )
+        </p> <br>
+
+        <h2>Combinando selectors</h2> <br>
+        <p>
+            Podemos usar o seletor ( * ) que é uma regra geral para todos os elementos. <br>
+            Uma mesma regra pode ser geral para todos os elementos ( seletor1, seletor2 ) <br>
+            Podemos especializar as regras para coisas especificas ( seletor_elemento#seletor_id OU seletor_elemento.seletor_class) <br>
+            Podemos filtrar as regras a partir de uma regra anterior ( regra_seletor_pai > regra_seletor_filho [caso seja filho] OU regra_seletor  regra_seletordescedente [caso nao seja filho direto] ) <br>
+        </p> <br>
+
+        <h2>Seletores de atributo</h2> <br>
+        <p>
+            Para fazer comentários em CSS: /*  texto  */ <br>
+            Seletores de atributos: permite realizar a seleção a partir do valor ou da presença dos atributos. <br>
+            tag [atributo] { regra }
+        </p> <br>
+
+        <h2>Pseudo classes</h2> <br>
+        <p>
+            Usado para definir um estado específico de um elemento (ex: link visitado, cursor do mouse)... <br>
+            Ela dar dinamicidade e faz com que um elemento que dado tal evento (estado), tal regra deverá ser seguida. <br>
+            seletor:pseudoclasse { regra } <br> <br> 
+            <strong>Exemplo: </strong> <br>  a:link { … } (não visitado) <br>   a:visited { … } (visitado) <br>  a:hover { ... } (mouse sobre o link) <br>  a:active (selecionado) <br>  input:focus (ele está no foco) <br>  input:checked (selecionado) <br>  input:required (ele é obrigatório) <br>  :first-child (primeiro filho de um elemento) <br>  :last-child (último filho do elemento) <br>  :only-child (único filho) <br>  :disabled (elemento desabilitado) <br>  :empty (elemento sem filhos) <br>
+        </p> <br>
+
+        <h2>Pseudo elementos</h2> <br>
+        <p>
+            Estados para formatar partes específicas de um elemento. <br>
+            Vamos considerar pedaços do texto: <br> <br>
+            seletor::pseudoelemento { regra }
+            <strong> Exemplo: </strong> <br> seletor::first-letter (primeira letra) <br> seletor::first-line (primeira linha) <br> seletor::marker (alterar o marcador) <br> seletor::selection (parte selecionada).
+        </p> <br>
+
+        <h2>Especificades</h2> <br>
+        <p>
+            -Os elementos podem posuir regras diferentes e contraditórias. O navegador considera o seletor mais específico, ou seja, ele usa pontuação de especifidade. <br> <br>
+            A hierarquias de especificade considera: <br> <strong>Estilo de linha: </strong> coloca na tag html o atributo style. <br> <strong> IDs: </strong> usa o seletor ID. <br> <strong> Classes, pseudoclasses e atributos: </strong> considera o seletor de classe. <br> <strong> Elementos de pseudo elemento: </strong> usa-se o seletor de elementos e pseudo-elementos. <br> <br>O cálculo da especifidade varia de 0 a 1000 em que se aplica o maior valor: estilo de linha 1000; ID 100; Classe 10; Elemento 1. <br> <br> Podemos considerar que o navegador deve ignorar a especifidade por meio da regra !importante, contudo, seu uso deve ser evitado.
+        </p> <br>
+
+        <h2>Herança</h2> <br>
+        <p>
+            Alguns elementos do HTML possuem características padrão que o próprio navegador fornece ao elemento, caso o mesmo não seja definido pelo CSS em sua especifdade. <br>
+            Algumas propriedades são herdadas do seu descendente caso não seja especifizado (cor do texto, fonte e fundo), outras são 'resetadas' a cada nível (bordas, margem e padding). <br>
+            As propriedades não herdadas podem passar a herdar pela regra inherit (seletor { border: inherit } ) <br>
+            Podemos resetar as apresentações padrões do navegador por intermédio da biblioteca <a href="https://necolas.github.io/normalize.css/" target="_blank"> CSS Reset </a> , sendo assim, evita-se conflitos de apresentação.
+        </p> <br>
+
+        <h2>Box model [modelo de caixa]</h2> <br>
+        <p>
+            Esse conceito é usado quando falamos sobre layout e todos os elementos HTML são considerados uma caixa, sendo assim, algumas características que ela possui e se define os espaços entre elementos e suas marcações (margem, borda, espaço interno e conteúdo). <br>
+            O conteúdo da caixa, apresenta textos e imagens, o mesmo pode ser alterado por meio de regras CSS. <br>
+            O espaço interno é chamado de padding, em que a área entre conteúdo e borda da caixa e é sempre transparente <br>
+            A borda é o que define os limites da caixa e é externo ao espaçamento interno e conteúdo e pode ter um tamanho, estilo e cor específica. <br>
+            A margem é o expaço externo e define uma parte da distância entre a borda de 2 caixas e é sempre transparente. <br>
+            As caixas podem ser oganizadas em bloco (sempre gera uma nova linha por ocupar todo espaço horizontal e respeita propriedades de altura e largura) ou em linha (as caixas não geram nova linha, seu tamanho é definido pelo conteúdo e não deve conter elementos de bloco já que ela não respeita propriedades de altura e largura).
+        </p> <br>
+
+        <h2>Unidades de medida no CSS</h2> <br>
+        <p>
+            Medidas em CSS são usados para expressar um tamanho e possuem diversas propriedades (px; cm; em; rem...), é se dado um valor seguido de uma unidade sem espaço (2cm) e elas podem ser relativas (px, em, rem, %) ou absolutas (cm, mm, in, px, pt). <br>
+
+        </p> <br>
+
+        <h2>Tamanho</h2> <br>
+        <p>
+            A altura (height) e a largura (width) são definidos para elementos de blocos por meio de propriedades de: auto (navegador define), tamanho (um tamanho específico a partir de unidades de medidas), initial (a partir de tamanhos padrões no site) e inherit (herda do pai). <br>
+            Podemos definir que tal elemento terá largura máxima (max-widht) ou altura máxima (max-height). <br>
+            Podemos definir que tal elemento terá largura mínima (min-widht) ou altura mínima (min-height). <br>
+        </p> <br>
+
+        <h2>Margin e padding</h2> <br>
+        <p>
+            A margem permite que a gente crie e define espaços entre elementos (bordas) por meio da propriedade <strong> margin: </strong> auto (automático) tamanho fixo ou inherit (mesmo valor do pai). <br>
+            <br> A propriedade margem pode receber 4 valores: seletor { margin: topo direita base esquerda; } <br> A propriedade margem pode receber 3 valores: seletor { margin: topo direita-esquerda base }
+            <br> A propriedade margem pode receber 2 valores: seletor { margin: topo-base direita-esquerda }
+            <br> A propriedade margem pode receber 1 valor: seletor { margin: topo-base-direita-esquerda } <br> 
+            Pode ser só no topo (margin-top), só na base (margin-bottom), só na esquerda (margin-left), só na direita (margin-right).
+            <br> <br>
+            O padding cria espaços entre o conteúdo e a borda do elemento usa a propriedade padding com os valores tamanho ou inherit. Respeita mesmas regras de topo, base, direita e esquerda do margins
+        </p> <br>
+
+        <h2>Bordas</h2> <br>
+        <p>
+            A borda é definida a partir de 3 características (estilo, tamanho e cor) atribuido por: <strong> border: tamanho estilo cor </strong>. <br>
+            A borda pode ser um estilo determinado pelo border-style que pode ser: dotted, dashed, double, solid, groove, none e hidden. Seu estilo pode ser topo direita base esqueda. <br>
+            Podemos definir o tamanho da borda por meio da border-width em que segue unidade de medida CSS e segue o padrão de 4, 3, 2 ou 1. <br>
+            Podemos definir a cor da borda por meio da propriedade border-color e também segue os padrões 4, 3, 2 ou 1. <br>
+            Também segue a regra de ser pra cima (border-top), pra baixo (border-bottom), pra esquerda (border-right) ou direita (border-left).
+        </p> <br>
+
+        <h2>Cores:</h2> <br>
+        <p>
+            O sistema de cores respeita regras: nominal (definido pelo nome), RGB (definido peloi padrão RGB)HEX (definido pelo hexadecimal) e HSL (definido pelo padrão HSL) <br>
+            <strong> RGB: </strong>definido pelo Red Green Blue em que 0 é a usencia plena e 255 é presença plena - rgb(255, 0, 0) [vermelho], rgb(0, 255, 0) [verde], rgb(0, 0, 255) [azul], rgb(0, 0, 0) [preto] rgb(255, 255, 255) [branco]. Após o terceiro número pode-se coloca 0 (transparente) ou 1 (não transparente) <br> <br>
+            <strong> HEX: </strong> Uma cor hexadecimal é especificada com: #RRGGBB, onde os inteiros hexadecimais RR (vermelho), GG (verde) e BB (azul) especificam os componentes da cor. #000000 [preto], #ffffff [branco], #ff0000 [vermelho], #00ff00 [verde], #0000ff [azul]. <br> <br>
+            <strong> HSL: </strong> Hue, Saturation, Lightness (Matiz, Saturação e Luminosidade), isto é, Matiz define a cor em uma escala de cores, Saturação define a tonalidade de cinza, Luminosidade define a quantidade de luz. <br>  hsl(matiz [0 a 360], saturação [0 a 100%], luminosidade [0 a 100%]) pode ter 0 (transparente) e 1 (não transparente depois. <br> <br>
+            <strong> DICAS ÚTEIS: </strong> O sistema de cores são correspondentes e opte por utiliza paletas de cores para criar uma experiência melhor para o usuário.
+        </p> <br>
+
+        <h2>Background</h2> <br>
+        <p>
+            O fundo é definido pela propriedade background e pode possuir: cor, imagem, repetição e posição. <br>
+            A propriedade background-color define uma cor de fundo pode seguir padrões RGB, HEX e HSL e também ter opacidade definida. <br>
+            É possível atribuir uma imagem de fundo pela background-image: url('localdaimagem') <br>
+            É possível definir como uma imagem de fundo irá se repetir, pela repeat (todas as direções) repeat-y (verticalmente), repeat-x (horizontalmente) e no-repeat (não repetir). <br>
+            Principalmente utilizado se a imagem de fundo não se repetir. A propriedade utilizada é background-position. Os valores para esta propriedade são:  A B - [left | right | center] [top | center | bottom] x%y% inherit. <br>
+            Podemos definir o quão opaco é o nosso fundo: <strong> opacity: 0 (totalmente opaco) e 1 (nada opaco). </strong>
+        </p> <br>
+    </section>
+
+    <footer>
+        <h1 class="coopwrite"> Todos os direitos reservados. </h1>
+    </footer>
+</body>
+</html>

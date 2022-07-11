@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" type="image/jpg" href="../extras/startse.png" />
+    <title>Meus estudos | TechAcademy | Linguagens de programação </title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo_header">TechAcademy</h1>
+
+        <a href="../index.html" class="link"> HOME </a>
+
+        <a href="../modulo01/home.html" class="link"> SOBRE COMPUTAÇÃO </a>
+
+        <a href="../modulo02/home.html" class="link"> SOBRE PROGRAMAÇÃO </a>
+
+        <a href="./home.html" class="link"> HTML5 </a>
+
+        <a href="../modulo04/home.html" class="link"> CSS3 </a>
+
+        <a href="../modulo05/home.html" class="link"> ELEMENTOS DE PÁGINA </a>
+    </header>
+
+    <main id="tech-academy">
+
+        <h1> Sobre o módulo 03.</h1> <br>
+        <h6 style="text-align: justify;">
+            -Vamos sobre HTML, o que ele é e quais suas tags principais; <br>
+            -Abordar aspectos desde sua origem até sua implementação; <br>
+            -Como organizamos um documento de HTML; <br>
+            -Aproveite as aulas e use os exemplos.
+        </h6> <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="./exemplo01/example01.html"> VEJA EXEMPLO FEITO NAS AULAS DO MÓDULO. </a>
+
+        <h2>A origem de tudo:</h2> <br>
+        <p>
+            -Todas as vezes que você acessa uma página WEB, usamos o HTML para criá-las; <br>
+            -Tim Lee na década de 1980 criou 3 elementos de página WEB: linguagem de marcação (HTML), protocolo de comunicação (HTTP) e lugar onde acessar (browser); <br>
+            -Uniu 3 conceitos já existentes: internet e hypertexto; <br>
+            -HTTP transita páginas HTML em distintos computadores, por meio do servidor onde ele está; <br>
+            -Como funciona o site? primeiro se cria um documento que cria regras para hypertextos, depois um protocolo que liga entre computadores esse documento e, depois, um software (browser) apresenta a leitura desses padrões (regras) do hypertexto; <br>
+            -A principal característica é seguir padrões (HTML e HTTP) que lhes dá uma interoperabilidade, ou seja, ela consegue rodar em todos os sistemas operacionais.
+        </p> <br>
+
+        <h2>A linguagem HTML e como ela está estruturada:</h2> <br>
+        <p>
+            -HTML (HyperText Marcage Language), é a linguagem que marca e estrutura o conteúdo que será exibido ao usuário; <br>
+            -Linguagem de marcação (não é de programação) usa tags para marcar (descrever) o conteúdo dando-lhes regras específicas; <br>
+            -Documento HTML é um texto demarcado por um texto com tags e regras (popularmente conhecido como página WEB); <br>
+            -O documento HTML possui uma hierarquia: se cria uma tag (pai) e se coloca outra tag lá dentro (filho); <br>
+            -Os browser renderiza (interpreta) o código HTML dando-lhe um formato vísivel e compreensível.
+        </p> <br>
+
+        <h2>Como criar um documento HTML?</h2> <br>
+        <p>
+            -Pode ser criado em qualquer editor de texto, desde um bloco de notas até um editor próprio [no curso usa VisualStudioCode]; <br>
+            -Extensões usadas: HTML snippets e HTML/CSS support; <br>
+            -A estrutura mais simples do HTML tem: <br>
+            &nbsp;&nbsp;&nbsp;doctype: html para dizer o tipo de documento HTML; <br>
+            &nbsp;&nbsp;&nbsp;A tag pai HTML, diz que tudo que está ali fará parte do documento HTML; <br>
+            &nbsp;&nbsp;&nbsp;A tag filho head, diz o cabeçário onde se diz tudo que é necessário para apresentar o conteúdo; <br>
+            &nbsp;&nbsp;&nbsp;A tag filho body, diz todos os conteúdos estarão ali contidos.
+        </p> <br>
+
+        <h2>Tags de abertura e fechamento.</h2> <br>
+        <p>
+            -Tag é o que permite der uma regra, a essência da linguagem HTML; <br>
+            -Tag de abertura e fechamento: se começa com o nome da tag entre &lt; e &gt; o conteúdo e, por fim, seu fechamento entre &lt;/ e &gt;; <br>
+            -Tag só de abertura: se tem só a tag e alguns atributos.
+        </p> <br>
+
+        <h2>Tags de apresentação e tags de organização.</h2> <br>
+        <p>
+            -Tags de apresentação: são tags que mostram algum elemento h (título), p (paragrafo), a (ancorar links) e img (colocar imagem); <br>
+            -Tag de organização: serve para organizar os elementos: div (divisão), section (seção), article (artigo).
+        </p> <br>
+
+        <h2>Tags e seus atributos.</h2> <br>
+        <p>
+            -Coloca-se o nome do atributo e define-se um valor, pode ser especifico (como src) ou global (como id).
+        </p> <br>
+
+        <h2>Tag title</h2> <br>
+        <p>
+            -É uma tag que dá o titulo para sua página (na barra de navegação); <br>
+            -Muito usado por ferramentas de busca para encontrar sua página do site. <br>
+            &lt;title&gt; titulo da página &lt;/title&gt;
+        </p> <br>
+
+        <h2>Tag metacharset</h2> <br>
+        <p>
+            -Usada para colocar acentos na página WEB. <br>
+            &lt;meta charset="UTF-8"&gt;
+        </p> <br>
+
+        <h2>Tags de páragrafo, span e cabeçário</h2> <br>
+        <p>
+            -São elementos textuais da página: <br>
+            1)Tags de títulos (heading): h1 (maior) até h6 (menor). &nbsp; &lt;h1&gt; texto &lt;/h1&gt; <br><br>
+            2)Tags com conteúdos: p &nbsp; &lt;p&gt; parágrafo &lt;p&gt; <br><br>
+            3)Tags de sub-divisão (texto dentro do texto): span &nbsp; &lt;span&gt; sub texto &lt;span&gt; <br>
+        </p> <br>
+
+        <h2>Tag para formatação pessoal:</h2> <br>
+        <p>
+            -Tags usadas para dar um estilo especial: <br>
+            <strong> A tag strong deixa em negrito. </strong> <br>
+            <em> A tag em deixa em itálico. </em> <br>
+            <u> A tag u deixa texto sublinhado </u> <br>
+        </p> <br>
+
+        <h2>Tags de Listas:</h2> <br>
+        <p>
+            -cria uma lista: <br>
+            1)lista não ordenada (ul). <br> &lt;ul&gt; <br> &nbsp;&lt;li&gt;&lt;/li&gt; <br> &lt;/ul&gt; <br>
+            2)lista ordenada (ol). <br> &lt;ol&gt; <br> &nbsp;&lt;li&gt;&lt;/li&gt; <br> &lt;/ol&gt;
+        </p> <br>
+
+        <h2>Tag img</h2> <br>
+        <p>
+            -Usado para colocar imagem no texto: <br>
+            &lt;img src="" alt=""&gt;
+        </p>
+
+        <h2>Tag video</h2> <br>
+        <p>
+            -Usado para incluir um video na página: <br>
+            &lt;video src="" controls> texto a ser exibido caso o navegador não encontre o vídeo. &lt;/video>
+        </p>
+
+        <h2>Elementos inblock e inline:</h2> <br>
+        <p>
+            -inblock: ocupa todo o espaço do pai (ocupa toda a linha); <br>
+            -inline: ocupa somente o espaço dele (mais de um elemento na mesma linha). <br>
+            -A tag br quebra a linha dos elementos inline. <br>
+        </p>
+
+        <h2>Hierarquia no HTML:</h2> <br>
+        <p>
+            -HTML é feito por elementos pais, filhos, netos e descendentes. <br>
+            1ª hierarquia - html <br>
+            2ª hierarquia - head e body (irmãos) <br>
+            Outras hierarquias - section div article aside <br>
+            -Hierarquia existe em todos os elementos da página HTML. <br>
+        </p>
+
+        <h2>Entendendo o <abbr title="Document Object Model (Modelo de Objeto de Documentos)">DOM</abbr>:</h2> <br>
+        <p>
+            -É um objeto que compreende de forma compreensível o modelo de árvores do HTML, em tempo de execução. <br>
+            -Para acessar, usamos a parte de desenvolvedor (inspecionar) o site. <br>
+            -É bem parecido com HTML, porém, permite sua visão de forma mais prática, ela só muda em tempo de execução. <br>
+            -O DOM existe para criar um elemento HTML que altera em tempo de execução, por meio de javascript. <br>
+            -Carregamento de atualização constante e não precisa retornar no servidor pra pegar as atualizações. <br>
+        </p> <br>
+
+        <h2>Como trazer manipulações do <abbr title="Document Object Model (Modelo de Objeto de Documentos)">DOM</abbr>?</h2> <br>
+        <p>
+            1)getElementById = capturar um elemento específico do DOM, window.document.getElementById para pegar o documento <br>
+            1.1)Podemos colocar o getElementById dentro de uma variável e usar a função innerHTML para alterar seu conteúdo <br><br>
+            2)getElementsByClassName e getElementsByTagName = capturar elementos múltiplas características. <br>
+            <a href="./exemplo02/exemplo02.html"> PÁGINA PARA SER ALTERADA </a>
+        </p>
+
+        <h2>Eventos DOM:</h2> <br>
+        <p>
+            -Clique: apesar de tal clique algo aconteça; <br>
+            -Dada tal mudança em caixa de texto faça isso ou aquilo; <br>
+            -Como fazemos o evento? <br>
+            1.Mapear o elemento (por meio de id e variável); <br>
+            2.Adcionar um monitor de eventos; <br>
+            2.1.Usa a função addEventListener;
+            2.1.1.Como primeiro parametro qual o evento é;
+            2.1.2.Usa-se uma segunda função para fazer com que possamos dizer o que deve acontecer.
+        </p> <br>
+
+        <h2>Navegando entre elementos DOM:</h2> <br>
+        <p>
+            -Podemos navegar entre vários elementos filhos: <br>
+            função children diz os filhos do elemento <br>
+            função firstElementChild diz o primeiro filho do elemento. <br>
+            função parentElement diz os pais do elemento.
+        </p> <br>
+
+        <h2>Tags semânticas:</h2> <br>
+        <p>
+            -Como organizar várias seções da página; <br>
+            -Se usar muita div, pode ter uma sobrecarga de desenvolvedor e díficil compreensão para interpretadores do HTML; <br>
+            -Os elementos computacionais (como browser, leitor de tela e navegador de busca) tem dificuldade pra entender o site com muitas divs; <br>
+            -Usamos tags containers para organizar as seções do site, para que elementos computacionais saibam o que aquele container significa; <br>
+            -header (cabeçário), nav (navegação), footer (rodapé), code (código), summary (sumário), address (endereço), dfn (definir algo), article (artigo), details (dar detalhes)....
+        </p>
+
+        <h3>A Header</h3> <br>
+        <p>
+            -head (tem metadados e se tem linkado coisas pra fazer o site funcionar) é dferente de header (tem a função) de representar o cabeçário.
+        </p> <br>
+
+        <h3>A nav</h3> <br>
+        <p>
+            -A nav é usada para definir um conjunto de links de navegação, links que nos levam para um lugar.
+        </p> <br>
+
+        <h2>A main</h2> <br>
+        <p>
+            Main - serve para especificar a parte principal (NÚCLEO) da página. <br>
+
+        </p> <br>
+
+        <h2>A Footer e outras tags semânticas</h2> <br>
+        <p>
+            Footer - Representa o rodapé do documento e da seção, tem mapa do site e informações de quem fez. <br>
+            Figure - cria uma imagem e permite colocar imagem e legenda. <br>
+            Code - coloca uma região em código. <br>
+            Abbr - Abreviatura pra detalhar algo. <br>
+            Details - para detalhar um dado. <br>
+            Aside - marginal a uma main, explicar ou aprimorar ao conteúdo principal. <br>
+            Address - colocar contato e endereço dentro desse conteúdo. <br>
+            Article - usar o artigo do site. <br>
+            Dfn - indexar e definir o conteúdo do seu site. <br>
+            Dialog - cria caixa de dialógo do seu html. <br>
+            Section - delimitar as seçõe do seu site. <br>
+        </p> <br>
+
+        <a href="./exemplo03/exemplo03.html"> EXEMPLO DE MONO PAGE USANDO TAG SEMANTICA </a>
+
+        <h2> Metadados: </h2> <br>
+        <p>
+            -Dados que explicam dados, ou seja, informações auxiliares em compartilhamento de dados; <br>
+            -Inseridos na tag head (pois é o que dá um valor externo ao site); <br>
+            -Title: dá um titulo usado na barra de favoritos, usado por motores de busca. <br>
+            -Meta charset: o incode de carregamento diz padrão de tradução;
+        </p> <br>
+
+        <h2> Style: </h2> <br>
+        <p>
+            -vai dentro da tag head que tem padrões básicos do css para a página, ou seja, estilizar os elementos padrões.
+        </p> <br>
+
+        <h2> Script: </h2> <br>
+        <p>
+            -vai dentro da tag head que tem padrões básicos do js para a página, ou seja, dar inteligencia aos elementos padrões.
+        </p> <br>
+
+        <h2> Base: </h2> <br>
+        <p>
+            -Vai dentro da tag head e serve para organizar mesmo site do mesmo domínio. Auxilia endereço base pra ser concatenado por padrão.
+        </p> <br>
+
+        <h2> Metatags: </h2> <br>
+        <p>
+            Quais atributos posso usar na tag meta? Para ser aprimorada pelo motor de busca... <br>
+            O que o motor de busca lê? Os metadados! <br>
+            meta: name e content -> name: "description" (a descrição); -> name: "keywords" (palavras chaves); -> name: "author" (quem fez); -> name: "robots" (index [indexar a página], noindex [não indexar], follow [seguir], nofollow [não  seguir], noarchive [não  deixar cache] e  nosnippet [não exibir descrição]).
+        </p> <br>
+
+        <h2> Metatags sociais: </h2> <br>
+        <p>
+            -Aquelas usadas para deixar rede social e site compatíveis. auxiliam na descrição de compartilhamento em redes socias (como insta, twitter, facebook).
+        </p> <br>
+
+        <h2> FavIcon: </h2> <br>
+        <p>
+            O icone que fica na barra de navegação. <br>
+            &lt;link rel="shortcut icon" type="image/x-icon" href="onde está?"&gt;
+        </p> <br>
+
+        <h2> Hyperlinks: </h2> <br>
+        <p>
+            -São as formas como podemos conectar sites, usados pela tag a o atributo target (_blank) para dizer o alvo (local) onde vai abrir.
+        </p> <br>
+
+        <h2> Âncoras: </h2> <br>
+        <p>
+            -São hiperlinks que vão para a mesma parte da mesma página, que é feito pela ID; <br>
+            Para ir pra outra página numa parte específica, para isso, usamos o atributo href com o hyperlink com #id.
+        </p> <br>
+
+        <h2> Links especializados: </h2> <br>
+        <p>
+            Criar links que dirige pra lugares específicos, por meio, da tag a, atributo href ("mailto: email da pessoa" ou "tel: o número da pessoa.")
+        </p> <br>
+
+        <h2> URL: </h2> <br>
+        <p>
+            Localizador Uniforme de Recursos -> padrão pro navegador encontrar uma página WEB.
+        </p> <br>
+
+        <h2> Navegando por diretórios: </h2> <br>
+        <p>
+            Caminhos relativos (a partir de onde o arquivo está) e caminhos absolutos (desde a raíz do projeto). Pode ter navegações internas (mesmo projeto) ou externa (fora da página). A navegação dentro da mesma aplicação pode ser feita por: . (mesmo nível) ou .. (nível anterior)/nome do arquivo. 
+        </p> <br>
+
+        <h2> Tabelas: </h2> <br>
+        <p>
+            É uma planilha formada linha e coluna. <br>
+            Envolvida pela table, a sua linha é feita por tr e cada célula será feita por td 
+        </p> <br>
+
+        <h2> Bordas: </h2> <br>
+        <p>
+            Podemos usar o atributo border na tag table.
+        </p> <br>
+
+        <h2> Tabelas complexas: </h2> <br>
+        <p>
+            são tabelas em que uma célula ocupa um espaço maior que a coluna deveria ocupar. <br>
+            Podemos usar o atributo com colspam para mesclar um conjunto específico de colunas. <br>
+            Podemos usar o atributo rowspam para mesclar um conjunto específico de linhas.
+        </p> <br>
+
+        <h2> Tags de tabela: </h2>
+        <p>
+            -Podemos criar cabeçário, corpo e rodapé da tabela, por meio de tags semânticas. <br>
+            Cabeçário é feito por thead <br>
+            Corpo é feito por tbody <br>
+            Rodapé é feitto por tfoot  <br>
+            A tag caption pode ser usado logo após abertura da tag table e criar uma legenda
+        </p> <br>
+
+        <h2> Estilizando tabelas </h2>
+        <p> ESTUDAR EXEMPLO: </p>
+
+        <a href="./exemplo04/table.html"> EXEMPLO TABELA. </a>
+    </main>
+</body>
+
+<footer>
+    <h1 class="coopwrite"> Todos os direitos reservados. </h1>
+</footer>
+
+</html>
